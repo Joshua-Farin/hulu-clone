@@ -6,8 +6,8 @@ import Results from '../components/Results'
 import requests from '../utils/requests'
 
 
-export default function Home(props) {
-  console.log(props);
+export default function Home({ results }) {
+
   return (
     <div>
       <Head>
@@ -20,7 +20,7 @@ export default function Home(props) {
       
       <Header />
       <Nav />
-      <Results />
+      <Results results={results}/>
     </div>
   )
 }
